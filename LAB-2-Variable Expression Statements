@@ -1,0 +1,52 @@
+#Soal 
+#Joni melihat pengkuran suhu ruangan pada alat ukur sauna yang awalnya bersuhu 71°F
+#Joni diminta untuk menaikan suhu mencapai 82°C
+#Sementara alat pemanas suhu hanya menunjukan suhu dalam satuan °F
+#Joni tidak tahu 82°C sama dengan berapa Farenheit
+#Karena sring mengalami kesulitan dalam hal tersebut Joni Minta tolong untuk membuat alat hitung suhu sederhana
+
+print ('========Convert Suhu Celcius========')
+
+#Pilihan 
+F = "Farenheit"
+K = "Kelvin"
+R = "Reamur"
+hasil = '°C = '
+
+#Input
+print ('Celcius ke Farenheit')
+print ('Celcius ke Kelvin')
+print ('Celcius ke Reamur')
+
+pilih = input("Convert Celcius Ke: ")
+for i in range (100):
+
+    if pilih == F:
+        C = float(input("Masukkan Suhu Celcius : "))
+        #Rumus Farenheit
+        farenheit = (C*9/5)+32
+        farenheit1 = '°F'
+        print (C,hasil,farenheit,farenheit1)
+
+    if pilih == K:
+        C = float(input("Masukkan Suhu Celcius : "))
+        #Rumus Kelvin
+        kelvin = (C+273.15)
+        kelvin1 = '°K'
+        print (C,hasil,kelvin,kelvin1)
+
+    if pilih == R:
+        C = float(input("Masukkan Suhu Celcius : "))
+        #Rumus Reamur
+        reamur = (C*4/5)
+        reamur1 = '°R'
+        print (C,hasil,reamur,reamur1)
+
+    Ya = "Iya"
+    No = "Tidak"
+    lagi = input("Apakah Anda Ingin Melanjutkan Lagi? : ")
+    if lagi == Ya:
+        pilih = input("Convert Celcius Ke: ")
+    else:
+        print ('Terimakasih')
+        break
